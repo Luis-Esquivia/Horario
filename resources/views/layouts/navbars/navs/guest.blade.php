@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top text-white">
   <div class="container">
     <div class="navbar-wrapper">
-      <a class="navbar-brand" href="{{ route('home') }}">{{ $title }}</a>
+      <a class="navbar-brand" style="font-weight: bold;" href="{{ route('home') }}">{{ $title }}</a>
     </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
       <span class="sr-only">Toggle navigation</span>
@@ -14,11 +14,11 @@
       <ul class="navbar-nav">
         <li class="nav-item{{ $activePage == 'login' ? ' active' : '' }}">
           <a href="{{ route('login') }}" class="nav-link">
-            <i class="material-icons">fingerprint</i> {{ __('Iniciar session') }}
+            <i class="bi bi-calendar3 icon_calendario"> </i> {{ __(' Ver Horarios') }}
           </a>
         </li>
       </ul>
-    </div>
+    </div>  
   </div>
 </nav>
 <!-- End Navbar -->

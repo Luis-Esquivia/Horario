@@ -13702,7 +13702,7 @@ h3,
 .h3 {
 font-size: 1.5625rem;
 line-height: 1.4em;
-margin: 20px 0 10px;
+margin: 0px 0 10px;
 }
 
 h4,
@@ -18861,6 +18861,11 @@ background-color: #282828;
 
 .off-canvas-sidebar .wrapper-full-page .page-header {
 padding-bottom: 0px !important;
+}
+
+.icon_calendario{
+  margin-right: 5px;
+  font-size: 16px;
 }
 
 /* @media screen and (max-width: 991px) {

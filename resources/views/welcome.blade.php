@@ -68,7 +68,7 @@
 
   <section id="hero-animated" class="hero-animated d-flex align-items-center">
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-      <img src="{{asset('img/hero-carousel/Fondo 4.png')}}" class="img-fluid animated">
+      <img src="{{asset('img/calendarioimg2.png')}}" class="img-fluid animated">
       <h2>Bienvenidos a <span>Horarios - CNCA</span></h2>
       <p>Plataforma web para la gestión de Horarios del Centro Nacional Colombo Alemán .</p>
       <div class="d-flex">
@@ -85,7 +85,7 @@
    
 
 
-    <!-- ======= Features Section ======= -->
+    {{-- <!-- ======= Features Section ======= -->
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
 
@@ -291,7 +291,7 @@
         </div>
 
       </div>
-    </section><!-- End Features Section -->
+    </section><!-- End Features Section --> --}}
 
 
 
@@ -332,7 +332,7 @@
     </section><!-- End Call To Action Section -->
 
 
- <!-- ======= Clients Section ======= -->
+ {{-- <!-- ======= Clients Section ======= -->
  <section id="clients" class="clients">
   <div class="container" data-aos="zoom-out">
 
@@ -350,13 +350,13 @@
     </div>
 
   </div>
-</section><!-- End Clients Section -->
+</section><!-- End Clients Section --> --}}
 
 
 
 
 
-    <!-- ======= Contact Section ======= -->
+    {{-- <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
 
@@ -437,7 +437,7 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section><!-- End Contact Section --> --}}
 
   </main><!-- End #main -->
 

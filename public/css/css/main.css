@@ -13,6 +13,7 @@
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
+  --VerdeSena:#39a900;
 }
 
 a {
@@ -484,6 +485,7 @@ section {
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
+  /* background-color: #f8f9fa !important; */
 }
 .hero-animated h2 {
   margin: 0 0 10px 0;
@@ -507,7 +509,7 @@ section {
 }
 @media (min-width: 992px) {
   .hero-animated .animated {
-    max-width: 45%;
+    max-width: 25%;
   }
 }
 @media (max-width: 991px) {
@@ -1320,6 +1322,10 @@ section {
 /*--------------------------------------------------------------
 # Features Section
 --------------------------------------------------------------*/
+.features{
+  background-color: #f7f8faa0 !important;
+}
+
 .features .nav-tabs {
   border: 0;
 }

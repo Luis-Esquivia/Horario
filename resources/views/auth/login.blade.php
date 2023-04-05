@@ -3,8 +3,8 @@
 @section('content')
 <div class="container" style="height: auto;">
     <div class="row align-items-center">
-        <div class="col-md-9 ml-auto mr-auto mb-3 text-center">
-            <h3>{{ __('SISTEMA DE HORARIO') }}</h3>
+        <div class="col-md-9 ml-auto mr-auto mb-1 text-center">
+            <h3 class="titulo_login">{{ __('INICIO DE SESSION') }}</h3>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
             <form class="form" method="POST" action="{{ route('login') }}">
@@ -12,18 +12,8 @@
 
                 <div class="card card-login card-hidden mb-3">
                     <div class="card-header card-header-primary text-center">
-                        <h4 class="card-title"><strong>{{ __('BIENVENIDO') }}</strong></h4>
-                        <div class="social-line">
-                            <a href="#" class="btn btn-just-icon btn-link btn-white">
-                                <i class="fa fa-facebook-square"></i>
-                            </a>
-                            <a href="#" class="btn btn-just-icon btn-link btn-white">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                            <a href="#" class="btn btn-just-icon btn-link btn-white">
-                                <i class="fa fa-google-plus"></i>
-                            </a>
-                        </div>
+                        <img src="{{ asset('img/logo_sena_blanco.svg') }}" alt="" class="logo_index mt-2 mb-3 me-4" >
+                        <h4 class="card-title titulo_login"><strong>{{ __('BIENVENIDO') }}</strong></h4>
                     </div>
                     <div class="card-body">
                         <p class="card-description text-center">{{ __('Ingrese sus credenciales') }}</p>
