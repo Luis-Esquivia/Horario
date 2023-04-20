@@ -2,25 +2,25 @@
     color: rgb(0, 0, 0);
 }
 .bg-c-blue {
-    background: linear-gradient(45deg,#73b4ff, #4099ff);
+    background: linear-gradient(45deg,#FDA194, #FE8574);
 }
 .bg-c-green {
-    background: linear-gradient(45deg,#59e0c5, #2ed8b6);
+    background: linear-gradient(45deg,#95FE66, #64E52A);
 }
 .bg-c-pink {
     background: linear-gradient(45deg,#B461EA, #FF5370);
 }
 .bg-c-jc {
-    background: linear-gradient(45deg,#D75353, #FF5370);
+    background: linear-gradient(45deg,#FFDB71, #F6CE59);
 }
 .bg-c-jd {
-    background: linear-gradient(45deg,#4c4c4c, #656565);
+    background: linear-gradient(45deg,#5BF5CE, #47CDAB);
 }
 .bg-c-jdc {
     background: linear-gradient(45deg,#D4E556, #C4D44A);
 }
 .bg-c-jdcb {
-    background: linear-gradient(45deg,#40C0D8, #44ADC1 );
+    background: linear-gradient(45deg,#2EDC6C, #00B340 );
 }
 .card {
     -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);

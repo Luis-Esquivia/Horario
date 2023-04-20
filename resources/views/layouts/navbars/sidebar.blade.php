@@ -16,7 +16,7 @@
             </li>
             <li class="nav-item {{ $activePage == 'Lugar' || $activePage == 'lugar' ? ' active' : '' }}">
                 <a class="nav-link" data-toggle="collapse" href="#laravel" aria-expanded="true">
-                    <i class="fa fa-users"></i>
+                    <i class="material-icons">apartment</i>
                     <p>
                         RCSA<b class="caret"></b>
                     </p>
@@ -25,13 +25,13 @@
                     <ul class="nav">
                         <li class="nav-item{{ $activePage == 'regional' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('regional.index') }}">
-                                <i class="material-icons">location_city</i>
+                                <i class="material-icons">domain</i>
                                 <p>{{ __('Regional') }}</p>
                             </a>
                         </li>
                         <li class="nav-item{{ $activePage == 'posts' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('posts.index') }}">
-                                <i class="material-icons">apartment</i>
+                                <i class="material-icons">domain</i>
                                 <p>{{ __('Centros') }}</p>
                             </a>
                         </li>
@@ -61,20 +61,20 @@
                     <ul class="nav">
                         <li class="nav-item{{ $activePage == 'coordinador' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('coordinador.index') }}">
-                                <i class="material-icons">building_user</i>
-                                <span class="sidebar-normal">Coordinador</span>
+                                <i class="material-icons">assignment_ind</i>
+                                <p>Coordinador</p>
                             </a>
                         </li>
                         <li class="nav-item{{ $activePage == 'instructor' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('instructor.index') }}">
                                 <i class="material-icons">assignment_ind</i>
-                                <span class="sidebar-normal">Instructor</span>
+                                <p>Instructor</p>
                             </a>
                         </li>
                         <li class="nav-item{{ $activePage == 'aprendiz' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('aprendiz.index') }}">
-                                <i class="material-icons">hail</i>
-                                <span class="sidebar-normal">Aprendiz</span>
+                                <i class="material-icons">assignment_ind</i>
+                                <p>Aprendiz</p>
                             </a>
                         </li>
                     </ul>
@@ -82,7 +82,7 @@
             </li>
             <li class="nav-item {{ $activePage == 'profile' || $activePage == 'user-management' ? ' active' : '' }}">
                 <a class="nav-link" data-toggle="collapse" href="#laravelExampleee" aria-expanded="true">
-                    <i class="fa fa-users"></i>
+                    <i class="bi bi-calendar-week"></i>
                     <p>Horarios
                         <b class="caret"></b>
                     </p>
@@ -91,8 +91,8 @@
                     <ul class="nav">
                         <li class="nav-item{{ $activePage == 'horarioevento' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('horarioevento.index') }}">
-                                <i class="material-icons">building_user</i>
-                                <span class="sidebar-normal">Horario extra</span>
+                                <i class="material-icons">calendar_month</i>
+                                <p>Horario extra</p>
                             </a>
                         </li>
                         <li class="nav-item{{ $activePage == 'Horario' ? ' active' : '' }}">
@@ -112,19 +112,19 @@
             </li>
             <li class="nav-item{{ $activePage == 'fichas' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('ficha.index') }}">
-                    <i class="material-icons">numbers</i>
+                    <i class="bi bi-book-fill"></i>
                     <p>{{ __('Fichas') }}</p>
                 </a>
             </li>
             <li class="nav-item{{ $activePage == 'asignarficha' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('asignarficha.index') }}">
-                    <i class="material-icons">numbers</i>
+                    <i class="bi bi-person-workspace"></i>
                     <p>{{ __('Asignar ficha a usuario') }}</p>
                 </a>
             </li>
             <li class="nav-item {{ $activePage == 'malla' || $activePage == 'malla' ? ' active' : '' }}">
                 <a class="nav-link" data-toggle="collapse" href="#malla" aria-expanded="true">
-                    <i class="fa fa-users"></i>
+                    <i class="bi bi-calendar-range-fill"></i>
                     <p>Malla
                         <b class="caret"></b>
                     </p>
@@ -133,13 +133,13 @@
                     <ul class="nav">
                         <li class="nav-item{{ $activePage == 'mallas' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('malla.index') }}">
-                                <i class="material-icons">domain</i>
+                                <i class="bi bi-calendar-range-fill"></i>
                                 <p>{{ __('Mallas') }}</p>
                             </a>
                         </li>
                         <li class="nav-item{{ $activePage == 'competencia' ? ' active' : '' }}">
                             <a class="nav-link" href="{{ route('competencia.index') }}">
-                                <i class="material-icons">domain</i>
+                                <i class="bi bi-card-checklist"></i>
                                 <p>{{ __('Competencia') }}</p>
                             </a>
                         </li>

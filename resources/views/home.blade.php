@@ -8,35 +8,9 @@
                     <div class="card">
                         <div class="card-body">
                             <div class="card-header card-header-primary">
-                                <h4 class="card-title">DATOS DEL PROGRAMA</h4>
+                                <h4 class="card-title">Reporte de Información General SENA</h4>
                               </div>
                             <div class="row">
-                                <div class="col-md-4 col-xl-4">
-                                    <div class="card bg-c-blue order-card">
-                                        <div class="card-block">
-                                            <h5>Aprendices</h5>
-                                            @php
-                                                use App\Models\Aprendiz;
-                                                $cant_aprendiz = aprendiz::count();
-                                            @endphp
-                                            <h2 class="text-right"><i class="fa fa-users f-left"></i><span>{{$cant_aprendiz}}</span></h2>
-                                            <p class="m-b-0 text-right"><a href="{{ route('aprendiz.index') }}" class="text-white">Ver más</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-xl-4">
-                                    <div class="card bg-c-green order-card">
-                                        <div class="card-block">
-                                        <h5>Instructores</h5>
-                                            @php
-                                            use App\Models\Instructor;
-                                             $cant_instructores = instructor::count();
-                                            @endphp
-                                            <h2 class="text-right"><i class="fa fa-users f-left"></i><span>{{$cant_instructores}}</span></h2>
-                                            <p class="m-b-0 text-right"><a href="{{ route('instructor.index') }}" class="text-white">Ver más</a></p>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="col-md-4 col-xl-4">
                                     <div class="card bg-c-jdc order-card">
                                         <div class="card-block">
@@ -50,8 +24,9 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="col-md-4 col-xl-4">
-                                    <div class="card bg-c-jc order-card">
+                                    <div class="card bg-c-blue order-card">
                                         <div class="card-block">
                                         <h5>Centros</h5>
                                             @php
@@ -63,19 +38,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-xl-4">
-                                    <div class="card bg-c-jd order-card">
-                                        <div class="card-block">
-                                        <h5>Fichas</h5>
-                                            @php
-                                            use App\Models\Ficha;
-                                             $cant_fichas = Ficha::count();
-                                            @endphp
-                                            <h2 class="text-right"><i class="material-icons f-left">numbers</i><span>{{$cant_fichas}}</span></h2>
-                                            <p class="m-b-0 text-right"><a href="{{ route('ficha.index') }}" class="text-white">Ver más</a></p>
-                                        </div>
-                                    </div>
-                                </div>
+
                                 <div class="col-md-4 col-xl-4">
                                     <div class="card bg-c-jdcb order-card">
                                         <div class="card-block">
@@ -89,6 +52,49 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="col-md-4 col-xl-4">
+                                    <div class="card bg-c-green order-card">
+                                        <div class="card-block">
+                                        <h5>Fichas</h5>
+                                            @php
+                                            use App\Models\Ficha;
+                                             $cant_fichas = Ficha::count();
+                                            @endphp
+                                            <h2 class="text-right"><i class="material-icons f-left">numbers</i><span>{{$cant_fichas}}</span></h2>
+                                            <p class="m-b-0 text-right"><a href="{{ route('ficha.index') }}" class="text-white">Ver más</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-xl-4">
+                                    <div class="card bg-c-jc order-card">
+                                        <div class="card-block">
+                                        <h5>Instructores</h5>
+                                            @php
+                                            use App\Models\Instructor;
+                                             $cant_instructores = instructor::count();
+                                            @endphp
+                                            <h2 class="text-right"><i class="fa fa-users f-left"></i><span>{{$cant_instructores}}</span></h2>
+                                            <p class="m-b-0 text-right"><a href="{{ route('instructor.index') }}" class="text-white">Ver más</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-xl-4">
+                                    <div class="card bg-c-jd order-card">
+                                        <div class="card-block">
+                                            <h5>Aprendices</h5>
+                                            @php
+                                                use App\Models\Aprendiz;
+                                                $cant_aprendiz = aprendiz::count();
+                                            @endphp
+                                            <h2 class="text-right"><i class="fa fa-users f-left"></i><span>{{$cant_aprendiz}}</span></h2>
+                                            <p class="m-b-0 text-right"><a href="{{ route('aprendiz.index') }}" class="text-white">Ver más</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
