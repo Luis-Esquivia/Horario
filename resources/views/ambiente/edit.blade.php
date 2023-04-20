@@ -2,8 +2,8 @@
 @section('content')
     <div class="content">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
                     <form action="{{ route('ambiente.update', $ambiente->id) }}" method="post" class="form-horizontal">
                         @csrf
                         @method('PUT')
@@ -42,7 +42,7 @@
                             </div>
                             <!--Footer-->
                             <div class="card-footer ml-auto mr-auto">
-                                <button type="submit" class="btn btn-primary">Actualizar</button>
+                                <button type="submit" class="btn btn-facebook">Actualizar</button>
                             </div>
                             <!--End footer-->
                         </div>
