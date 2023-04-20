@@ -13,7 +13,7 @@
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12 text-right">
-                                        <a href="{{ route('sede.create') }}" class="btn btn-sm btn-facebook">Añadir
+                                        <a href="{{ route('sede.create') }}" class="btn btn-facebook">Añadir
                                          sede</a>
                                 </div>
                             </div>
@@ -39,10 +39,10 @@
                                                 <td class="text-primary">
                                                     {{ $sede->created_at->toFormattedDateString() }}</td>
                                                 <td class="td-actions text-right">
-                                                    <a href="{{ route('sede.show', $sede->id) }}" class="btn btn-info">
-                                                            <i class="material-icons">person</i> </a>
+                                                    <!-- <a href="{{ route('sede.show', $sede->id) }}" class="btn btn-info">
+                                                            <i class="material-icons">person</i> </a> -->
                                                         <a href="{{ route('sede.edit', $sede->id) }}"
-                                                            class="btn btn-success"> <i class="material-icons">edit</i> </a>
+                                                            class="btn btn-warning"> <i class="material-icons">edit</i> Editar</a>
                                                         <form action="{{ route('sede.destroy', $sede->id) }}" method="post"
                                                             onsubmit="return confirm('Quieres borrar esta sede?')"
                                                             style="display: inline-block;">
@@ -50,6 +50,7 @@
                                                             @method('DELETE')
                                                             <button type="submit" rel="tooltip" class="btn btn-danger">
                                                                 <i class="material-icons">close</i>
+                                                                Eliminar
                                                             </button>
                                                         </form>
                                                 </td>

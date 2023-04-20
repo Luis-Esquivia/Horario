@@ -3,8 +3,8 @@
 @section('content')
 <div class="content">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
         <form method="POST" action="{{ route('sede.store') }}" class="form-horizontal">
           @csrf
           <div class="card ">
@@ -69,7 +69,7 @@
 
             <!--Footer-->
             <div class="card-footer ml-auto mr-auto">
-              <button type="submit" class="btn btn-primary">Guardar</button>
+              <button type="submit" class="btn btn-facebook">Guardar</button>
             </div>
             <!--End footer-->
           </div>
