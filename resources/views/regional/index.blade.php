@@ -3,25 +3,24 @@
 @section('content')
     <div class="content">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
                     <div class="card">
                         <div class="card-header card-header-primary">
-                            <h4 class="card-title">Regional</h4>
-                            <p class="card-category">Lista de regionales</p>
+                            <h4 class="card-title">Regionales Sena</h4>
+                            <p class="card-category">Listado de Regionales</p>
                         </div>
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-12 text-right">
-                                        <a href="{{ route('regional.create') }}" class="btn btn-sm btn-facebook">Añadir Regional</a>
+                                        <a href="{{ route('regional.create') }}" class="btn btn-facebook">Crear Regional</a>
                                 </div>
                             </div>
                             <div class="table-responsive">
                                 <table class="table ">
                                     <thead class="text-primary">
-                                        <th> Codigo regional </th>
-                                        <th> Nombre </th>
-
+                                        <th> Código de Regional </th>
+                                        <th> Nombre de Regional </th>
                                         <th class="text-right"> Acciones </th>
                                     </thead>
                                     <tbody>
@@ -30,20 +29,23 @@
                                                 <td>{{ $regional->id_regional }}</td>
                                                 <td>{{ $regional->name }}</td>
                                                 <td class="td-actions text-right">
-                                                        <a href="{{ route('regional.show', $regional->id) }}"
+                                                        <!-- <a href="{{ route('regional.show', $regional->id) }}"
                                                             class="btn btn-info">
-                                                            <i class="material-icons">person</i> </a>
-                                                        <a href="{{ route('regional.edit', $regional->id) }}"
-                                                            class="btn btn-success"> <i class="material-icons">edit</i> </a>
-                                                        <form action="{{ route('regional.destroy', $regional->id) }}" method="post"
-                                                            onsubmit="return confirm('¿Quieres eliminar esta REGIONAL?')"
-                                                            style="display: inline-block;">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit" rel="tooltip" class="btn btn-danger">
-                                                                <i class="material-icons">close</i>
-                                                            </button>
-                                                        </form>
+                                                            <i class="material-icons">person</i>
+                                                        </a> -->
+                                                    <a href="{{ route('regional.edit', $regional->id) }}"class="btn btn-warning"> 
+                                                        <i class="material-icons">edit</i> 
+                                                        Editar
+                                                    </a>
+                                                    <form action="{{ route('regional.destroy', $regional->id) }}" method="post"
+                                                        onsubmit="return confirm('¿Quieres eliminar esta REGIONAL?')" style="display: inline-block;">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" rel="tooltip" class="btn btn-danger">
+                                                            <i class="material-icons">close</i>
+                                                            Eliminar
+                                                        </button>
+                                                    </form>
                                                 </td>
                                             </tr>
                                         @empty

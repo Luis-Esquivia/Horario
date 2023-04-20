@@ -8672,7 +8672,7 @@ color: #fff !important;
 }
 
 .text-primary {
-color: #2196f3 !important;
+color: #39A900 !important;
 }
 
 a.text-primary:hover,
@@ -13683,7 +13683,7 @@ h6,
 .h3,
 .h4 {
 font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-font-weight: 300;
+font-weight: 500;
 line-height: 1.5em;
 }
 
@@ -13763,7 +13763,7 @@ color: #ff9800 !important;
 }
 
 .text-primary {
-color: #9c27b0 !important;
+color: #39A900 !important;
 }
 
 .text-danger {
@@ -16171,6 +16171,7 @@ border-color: #ddd;
 
 .table thead tr th {
 font-size: 1.063rem;
+font-weight: 500;
 }
 
 .table .th-description {
@@ -16977,6 +16978,7 @@ box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 
 .card .table tr:first-child td {
 border-top: none;
+font-weight: 400;
 }
 
 .card .card-title {
