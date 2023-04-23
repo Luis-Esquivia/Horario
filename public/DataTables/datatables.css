@@ -330,9 +330,11 @@ div.dataTables_wrapper div.dataTables_filter {
   text-align: right;
 }
 div.dataTables_wrapper div.dataTables_filter label {
-  font-weight: normal;
+  font-weight: 500;
   white-space: nowrap;
   text-align: left;
+  color:#39A900;
+  font-size: 17px;
 }
 div.dataTables_wrapper div.dataTables_filter input {
   margin-left: 0.5em;

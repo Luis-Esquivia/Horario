@@ -1,5 +1,4 @@
-<div class="sidebar" data-color="orange" data-background-color="white"
-    data-image="{{ asset('img/sidebar-1.jpg') }}">
+<div class="sidebar" data-color="orange" >
     <div class="logo">
         <a href="{{ route('home') }}" class="simple-text logo-normal">
             {{ __('Sistema de Horario') }}

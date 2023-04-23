@@ -15,7 +15,7 @@ class RegionalController extends Controller
     public function index()
     {
         $regional = Regional::paginate(5);
-        return view('regional.index', compact('regional'));
+        return view('admin.regional.index', compact('regional'));
     }
 
     /**
@@ -25,7 +25,7 @@ class RegionalController extends Controller
      */
     public function create()
     {
-        return view('regional.create');
+        return view('admin.regional.create');
     }
 
     /**
@@ -36,6 +36,10 @@ class RegionalController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'id_regional' => 'required',
+            'name' => 'required|string',
+        ]);
         Regional::create($request->all());
         return redirect()->route('regional.index');
     }
@@ -48,7 +52,7 @@ class RegionalController extends Controller
      */
     public function show(Regional $regional)
     {
-        return view('regional.show', compact('regional'));
+        return view('admin.regional.show', compact('regional'));
     }
 
     /**
@@ -59,7 +63,7 @@ class RegionalController extends Controller
      */
     public function edit(Regional $regional)
     {
-        return view('regional.edit', compact('regional'));
+        return view('admin.regional.edit', compact('regional'));
     }
 
     /**

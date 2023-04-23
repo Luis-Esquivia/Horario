@@ -40,6 +40,34 @@
   <script src="{{ asset('js/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
   <script src="{{ asset('js/material-dashboard.js?v=2.1.1') }}" type="text/javascript"></script>
   <script src="{{ asset('DataTables/datatables.js') }}"></script>
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script Modal -->
+  <script>
+    const myModal = document.getElementById('myModal')
+    const myInput = document.getElementById('myInput')
+
+    myModal.addEventListener('shown.bs.modal', () => {
+      myInput.focus()
+    })
+  </script>
+  <!-- Script Modal -->
+  <script>
+    (() => {
+        'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
   @yield('script')
   @stack('js')
 </body>

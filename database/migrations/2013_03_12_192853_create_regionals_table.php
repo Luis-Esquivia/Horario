@@ -16,7 +16,7 @@ class CreateRegionalsTable extends Migration
         Schema::create('regionals', function (Blueprint $table) {
             $table->engine="InnoDB";
             $table->id();
-            $table->string('id_regional');
+            $table->string('id_regional')->unique();
             $table->string('name');
             $table->timestamps();
         });
