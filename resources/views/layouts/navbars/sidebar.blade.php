@@ -14,7 +14,31 @@
                     <p>{{ __('Inicio') }}</p>
                 </a>
             </li>
-            <li class="nav-item {{ $activePage == 'Lugar' || $activePage == 'lugar' ? ' active' : '' }}">
+            <li class="nav-item{{ $activePage == 'regional' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('regional.index') }}">
+                    <i class="material-icons">domain</i>
+                    <p>{{ __('Regional') }}</p>
+                </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'posts' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('posts.index') }}">
+                    <i class="material-icons">domain</i>
+                    <p>{{ __('Centros') }}</p>
+                </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'sede' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('sede.index') }}">
+                    <i class="material-icons">domain</i>
+                    <p>{{ __('Sede') }}</p>
+                </a>
+            </li>
+            <li class="nav-item{{ $activePage == 'coordinador' ? ' active' : '' }}">
+                <a class="nav-link" href="{{ route('coordinador.index') }}">
+                    <i class="material-icons">assignment_ind</i>
+                    <p>Coordinador</p>
+                </a>
+            </li>
+            {{-- <li class="nav-item {{ $activePage == 'Lugar' || $activePage == 'lugar' ? ' active' : '' }}">
                 <a class="nav-link" data-toggle="collapse" href="#laravel" aria-expanded="true">
                     <i class="material-icons">apartment</i>
                     <p>
@@ -49,8 +73,8 @@
                         </li>
                     </ul>
                 </div>
-            </li>
-            <li class="nav-item {{ $activePage == 'profile' || $activePage == 'user-management' ? ' active' : '' }}">
+            </li> --}}
+            {{-- <li class="nav-item {{ $activePage == 'profile' || $activePage == 'user-management' ? ' active' : '' }}">
                 <a class="nav-link" data-toggle="collapse" href="#laravelExample" aria-expanded="true">
                     <i class="fa fa-users"></i>
                     <p>Usuarios
@@ -103,8 +127,8 @@
                         </li>
                     </ul>
                 </div>
-            </li>
-            <li class="nav-item{{ $activePage == 'programa' ? ' active' : '' }}">
+            </li> --}}
+            {{-- <li class="nav-item{{ $activePage == 'programa' ? ' active' : '' }}">
                 <a class="nav-link" href="{{ route('programa.index') }}">
                     <i class="material-icons">bookmarks</i>
                     <p>{{ __('Programa') }}</p>
@@ -151,7 +175,7 @@
                         </li>
                     </ul>
                 </div>
-            </li>
+            </li> --}}
         </ul>
     </div>
     @endif
