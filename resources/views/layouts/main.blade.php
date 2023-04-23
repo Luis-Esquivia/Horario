@@ -17,6 +17,8 @@
   <!-- CSS Files -->
   <link href="{{ asset('css/material-dashboard.css?v=2.1.1') }}" rel="stylesheet" />
   <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+  <!-- DataTables -->
+  <link rel="stylesheet" href="{{ asset('DataTables/datatables.css') }}">
 </head>
 
 <body class="{{ $class ?? '' }}">
@@ -36,7 +38,8 @@
   <script src="{{ asset('js/core/popper.min.js') }}"></script>
   <script src="{{ asset('js/core/bootstrap-material-design.min.js') }}"></script>
   <script src="{{ asset('js/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
-  <script src="{{ asset('js/material-dashboard.js?v=2.1.1') }}" type="text/javascript"> </script>
+  <script src="{{ asset('js/material-dashboard.js?v=2.1.1') }}" type="text/javascript"></script>
+  <script src="{{ asset('DataTables/datatables.js') }}"></script>
   @yield('script')
   @stack('js')
 </body>

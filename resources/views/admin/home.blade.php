@@ -103,4 +103,7 @@
         </div>
     </div>
     </div>
+    @section('script')
+        <script src="{{ asset('js/main/main-ad.js') }}"></script>
+    @endsection
 @endsection
