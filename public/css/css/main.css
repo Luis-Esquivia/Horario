@@ -17,7 +17,8 @@
 }
 
 a {
-  color: var(--color-links);
+  color: white;
+  font-weight: 600;
   text-decoration: none;
 }
 
@@ -2749,7 +2750,7 @@ section {
 }
 .footer .footer-legal {
   padding: 30px 0;
-  background: var(--color-secondary-dark);
+  background: var(--VerdeSena)
 }
 .footer .footer-legal .credits {
   padding-top: 4px;

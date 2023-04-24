@@ -24,7 +24,7 @@
                                         <i class="material-icons">face</i>
                                     </span>
                                 </div>
-                                <input type="number" name="email" class="form-control" placeholder="{{ __('Ingrese correo') }}"
+                                <input type="text" name="email" class="form-control" placeholder="{{ __('Ingrese correo') }}"
                                     value="{{ old('email', null) }}" required autocomplete="email" autofocus>
                             </div>
                         </div>
