@@ -178,6 +178,115 @@
         </ul>
     </div>
     @endif
+    @if (Auth::user()->hasRole("coordinador"))
+        <div class="sidebar-wrapper">
+            <ul class="nav">
+        
+                <li class="nav-item {{ $activePage == 'profile' || $activePage == 'user-management' ? ' active' : '' }}">
+                    <a class="nav-link" data-toggle="collapse" href="#laravelExample" aria-expanded="true">
+                        <i class="fa fa-users"></i>
+                        <p>Usuarios
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse" id="laravelExample">
+                        <ul class="nav">
+                            <li class="nav-item{{ $activePage == 'coordinador' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('coordinador.index') }}">
+                                    <i class="material-icons">assignment_ind</i>
+                                    <p>Coordinador</p>
+                                </a>
+                            </li>
+                            <li class="nav-item{{ $activePage == 'instructor' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('instructor.index') }}">
+                                    <i class="material-icons">assignment_ind</i>
+                                    <p>Instructor</p>
+                                </a>
+                            </li>
+                            <li class="nav-item{{ $activePage == 'aprendiz' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('aprendiz.index') }}">
+                                    <i class="material-icons">assignment_ind</i>
+                                    <p>Aprendiz</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item {{ $activePage == 'profile' || $activePage == 'user-management' ? ' active' : '' }}">
+                    <a class="nav-link" data-toggle="collapse" href="#laravelExampleee" aria-expanded="true">
+                        <i class="bi bi-calendar-week"></i>
+                        <p>Horarios
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse" id="laravelExampleee">
+                        <ul class="nav">
+                            <li class="nav-item{{ $activePage == 'horarioevento' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('horarioevento.index') }}">
+                                    <i class="material-icons">calendar_month</i>
+                                    <p>Horario extra</p>
+                                </a>
+                            </li>
+                            <li class="nav-item{{ $activePage == 'Horario' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('horario.index') }}">
+                                    <i class="material-icons">calendar_month</i>
+                                    <p>{{ __('Horario') }}</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                 <li class="nav-item{{ $activePage == 'programa' ? ' active' : '' }}">
+                    <a class="nav-link" href="{{ route('programa.index') }}">
+                        <i class="material-icons">bookmarks</i>
+                        <p>{{ __('Programa') }}</p>
+                    </a>
+                </li>
+                <li class="nav-item{{ $activePage == 'fichas' ? ' active' : '' }}">
+                    <a class="nav-link" href="{{ route('ficha.index') }}">
+                        <i class="bi bi-book-fill"></i>
+                        <p>{{ __('Fichas') }}</p>
+                    </a>
+                </li>
+                <li class="nav-item{{ $activePage == 'asignarficha' ? ' active' : '' }}">
+                    <a class="nav-link" href="{{ route('asignarficha.index') }}">
+                        <i class="bi bi-person-workspace"></i>
+                        <p>{{ __('Asignar ficha a usuario') }}</p>
+                    </a>
+                </li>
+                <li class="nav-item {{ $activePage == 'malla' || $activePage == 'malla' ? ' active' : '' }}">
+                    <a class="nav-link" data-toggle="collapse" href="#malla" aria-expanded="true">
+                        <i class="bi bi-calendar-range-fill"></i>
+                        <p>Malla
+                            <b class="caret"></b>
+                        </p>
+                    </a>
+                    <div class="collapse" id="malla">
+                        <ul class="nav">
+                            <li class="nav-item{{ $activePage == 'mallas' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('malla.index') }}">
+                                    <i class="bi bi-calendar-range-fill"></i>
+                                    <p>{{ __('Mallas') }}</p>
+                                </a>
+                            </li>
+                            <li class="nav-item{{ $activePage == 'competencia' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('competencia.index') }}">
+                                    <i class="bi bi-card-checklist"></i>
+                                    <p>{{ __('Competencia') }}</p>
+                                </a>
+                            </li>
+                            <li class="nav-item{{ $activePage == 'resultado' ? ' active' : '' }}">
+                                <a class="nav-link" href="{{ route('resultado.index') }}">
+                                    <i class="material-icons">domain</i>
+                                    <p>{{ __('Resultado') }}</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    @endif
     @if (Auth::user()->hasRole("instructor"))
     <div class="sidebar-wrapper">
         <ul class="nav">

@@ -75,6 +75,10 @@ class RegionalController extends Controller
      */
     public function update(Request $request, Regional $regional)
     {
+        $request->validate([
+            'id_regional' => 'required',
+            'name' => 'required|string',
+        ]);
         $regional->update($request->all());
 
         return redirect()->route('regional.index');

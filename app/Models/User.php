@@ -21,7 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        'sede_id',
+        'email_verified_at',
     ];
 
     /**
@@ -39,9 +39,9 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
+    // protected $casts = [
+    //     'email_verified_at' => 'datetime',
+    // ];
     public function roles()
     {
         return $this->belongsToMany(Role::class)->withTimestamps();

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Role;
+use Illuminate\Support\Str;
 
 class CoordinadorController extends Controller
 {
@@ -17,7 +18,7 @@ class CoordinadorController extends Controller
     {
         $rol = Role::where('name', 'coordinador')->first();
         $coordinadors = $rol->users()->paginate(5);
-        return view('coordinador.index', compact('coordinadors'));
+        return view('admin.coordinador.index', compact('coordinadors'));
     }
 
     /**
@@ -28,7 +29,7 @@ class CoordinadorController extends Controller
     public function create()
     {
 
-        return view('coordinador.create');
+        return view('admin.coordinador.create');
     }
 
     /**
@@ -39,10 +40,20 @@ class CoordinadorController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => 'required|string',
+            'email' => 'required',
+            'sede_id' => 'required',
+        ]);
+
+        $valueStr = Str::substr($request->name, 0, 2);
+        $password = $request->email.$valueStr.'*';
+        
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => bcrypt ($request->password),
+            'email_verified_at' => $request->sede_id,
+            'password' => bcrypt ($password),
         ]);
         $user->roles()->attach(Role::where('name', 'coordinador')->first());
         return redirect()->route('coordinador.index');
@@ -56,7 +67,7 @@ class CoordinadorController extends Controller
      */
     public function show(User $coordinador)
     {
-        return view('coordinador.show', compact('coordinador'));
+        return view('admin.coordinador.show', compact('coordinador'));
     }
 
     /**
@@ -67,7 +78,7 @@ class CoordinadorController extends Controller
      */
     public function edit(User $coordinador)
     {
-        return view('coordinador.edit',compact('coordinador'));
+        return view('admin.coordinador.edit',compact('coordinador'));
     }
 
     /**
